@@ -1,7 +1,7 @@
 const data={
     products:[
         {
-            name:'Men Regular Fit Polo Shirt',
+            name:'Men Regular Fit Shirt',
             slug:'men-regular-fit-polo-shirt',
             category:'Shirts',
             image:'/images/p1.jpg',
@@ -37,7 +37,7 @@ const data={
             description: 'Ace weekend dressing in this yellow solid Polo Neck T-shirt from Allen Solly by Allen Solly.'
         },
         {
-            name:'EYEBOGLER T Shirt for Men',
+            name:'EYEBOGLER T Shirt ',
             slug:'EYEBOGLER-Round-Neck-Full-Sleeve-Striped-T-Shirt-for-Men',
             category:'T-Shirts',
             image:'/images/p4.jpg',
