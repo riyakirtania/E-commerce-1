@@ -36,3 +36,11 @@ main{
 .rating span{
   color:#ffc000;
 }
+
+.prod-image{
+  max-width:100%;
+}
+
+.img-thumbnail{
+  width:60px;
+}

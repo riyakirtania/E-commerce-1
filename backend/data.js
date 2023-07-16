@@ -1,6 +1,7 @@
 const data={
     products:[
         {
+            _id:'1',
             name:'Men Regular Fit Shirt',
             slug:'men-regular-fit-polo-shirt',
             category:'Shirts',
@@ -13,18 +14,20 @@ const data={
             description: ' Symbol is built on the pillars of quality, reliability and affordability to offer you lifestyle essentials that never go out of fashion. Never out of style, this Symbol classic polo features contrast inner placket as an accent detail. Styled from breathable pique cotton, this polo is cut in an easy regular fit with ribbed collar & sleeves to provide a better grip and high-low hem for extra comfort. Wear it alone or under a jacket to make this collar polo look great'
         },
         {
+            _id:'2',
             name:'Allen Solly Men Polo',
             slug:'allen-solly-men-polo',
             category:'Shirts',
             image:'/images/p2.jpg',
             price:599,
-            countInStock:10,
+            countInStock:0,
             brand:'Allen Solly',
             rating:4.1,
             numReviews: 15,
             description: 'Ace weekend dressing in this yellow solid Polo Neck T-shirt from Allen Solly by Allen Solly.'
         },
         {
+            _id:'3',
             name:'Van Heusen Polo Shirt',
             slug:'van-heusen-men-regular-fit-polo-shirt',
             category:'Shirts',
@@ -37,6 +40,7 @@ const data={
             description: 'Ace weekend dressing in this yellow solid Polo Neck T-shirt from Allen Solly by Allen Solly.'
         },
         {
+            _id:'4',
             name:'EYEBOGLER T Shirt ',
             slug:'EYEBOGLER-Round-Neck-Full-Sleeve-Striped-T-Shirt-for-Men',
             category:'T-Shirts',
@@ -49,6 +53,7 @@ const data={
             description: 'This product is made of good quality material. Eyebogler bring you all good quality products. We provide different type of products with verities. Care instruction keep away from the items or products which may cause damage to this product.'
         },
         {
+            _id:'5',
             name:'U.S. POLO fit T-Shirt',
             slug:'U.S.-POLO-ASSN.-Men-Printed-Regular-fit-T-Shirt',
             category:'T-Shirts',

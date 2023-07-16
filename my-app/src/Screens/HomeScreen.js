@@ -5,6 +5,10 @@ import logger from "use-reducer-logger";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from "../Components/Product";
+import { Helmet } from "react-helmet-async";
+import LoadingBox from "../Components/LoadingBox";
+import ErrorMessage from "../Components/ErrorMessage";
+import { getError } from "../Util";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -33,19 +37,20 @@ function HomeScreen() {
         // setProducts(result.data);
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
       } catch (err) {
-        dispatch({ type: "FETCH_FAILURE", payload: err.message });
+        dispatch({ type: "FETCH_FAILURE", payload: getError(err) });
       }
     };
     fetchData();
   }, []);
   return (
     <div>
+      <Helmet><title>Amazon</title></Helmet>
       <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
-          <div>Loading...</div>
+          <LoadingBox/>
         ) : error ? (
-          <div>{error}</div>
+          <ErrorMessage variant="danger">{error}</ErrorMessage>
         ) : (
           <Row>
           {products.map((product) => {
